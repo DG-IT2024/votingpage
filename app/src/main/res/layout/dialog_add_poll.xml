@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Poll name -->
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Poll name"
+            android:inputType="textCapSentences" />
+
+        <!-- Description (optional) -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description (optional)"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:layout_marginTop="8dp" />
+
+        <!-- Link (optional) -->
+        <EditText
+            android:id="@+id/etLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Link (optional)"
+            android:inputType="textUri"
+            android:layout_marginTop="8dp" />
+
+        <!-- Options header + Add button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Options"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAddOptionField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add option" />
+        </LinearLayout>
+
+        <!-- Dynamic option fields will be appended here -->
+        <LinearLayout
+            android:id="@+id/containerOptionFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

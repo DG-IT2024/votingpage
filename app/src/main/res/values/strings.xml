@@ -1,0 +1,9 @@
+<resources>
+    <string name="title_voting_list">Voting List</string>
+    <string name="label_polls">Polls</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_add_poll">Add Poll</string>
+    <string name="cd_filter">Filter</string>
+    <string name="app_name">votingpage</string>
+
+</resources>

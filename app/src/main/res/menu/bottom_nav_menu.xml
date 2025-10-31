@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_tasks" android:title="Tasks" android:icon="@drawable/ic_tasks_24"/>
+    <item android:id="@+id/nav_polls" android:title="Polls" android:icon="@drawable/ic_poll_24"/>
+    <item android:id="@+id/nav_home" android:title="Home" android:icon="@drawable/ic_home_24"/>
+    <item android:id="@+id/nav_calendar" android:title="Calendar" android:icon="@drawable/ic_calendar_24"/>
+    <item android:id="@+id/nav_done" android:title="Done" android:icon="@drawable/ic_check_24"/>
+</menu>
