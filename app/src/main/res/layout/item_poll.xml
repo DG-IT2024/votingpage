@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -6,13 +7,11 @@
     android:orientation="vertical"
     android:padding="12dp">
 
-
-    <!-- Header row: title + trash -->
+    <!-- Header row: title + delete button -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical">
-
 
         <TextView
             android:id="@+id/tvTitle"
@@ -20,8 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Poll : Favorite Anime?"
-            android:textStyle="bold"/>
-
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
 
         <ImageButton
             android:id="@+id/btnDelete"
@@ -29,9 +29,28 @@
             android:layout_height="32dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_delete_24"
-            android:contentDescription="Delete"/>
+            android:contentDescription="Delete" />
     </LinearLayout>
 
+    <!-- Poll description -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Poll description"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+    <!-- Optional link -->
+    <TextView
+        android:id="@+id/tvLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:layout_marginTop="2dp"
+        android:text="https://example.com"
+        android:textColor="@color/teal_700" />
 
     <!-- Options (chips) -->
     <LinearLayout
@@ -39,8 +58,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:orientation="vertical"/>
+        android:orientation="vertical" />
 
+    <!-- Details panel (appears after selecting option) -->
+    <LinearLayout
+        android:id="@+id/panelDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected: —"
+            android:textColor="@color/black" />
+    </LinearLayout>
 
     <!-- Vote button -->
     <Button
@@ -50,5 +85,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_pill_button"
-        android:text="VOTE"/>
+        android:text="VOTE"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
 </LinearLayout>

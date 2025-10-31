@@ -13,5 +13,6 @@
     <color name="outline">#D9D9DE</color>
     <color name="accent">#FF7A1A</color> <!-- orange highlight -->
     <color name="gray_text">#6B7280</color>
-    <color name="dark_gray">#242424</color>
+    <color name="dark_gray">#404040</color>
+    <color name="gray">#808080</color>
 </resources>
