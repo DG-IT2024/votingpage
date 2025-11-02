@@ -5,5 +5,8 @@
     <string name="cd_add_poll">Add Poll</string>
     <string name="cd_filter">Filter</string>
     <string name="app_name">votingpage</string>
+    <string name="title_agenda">Agenda</string>
+    <string name="cd_calendar">Calendar</string>
+
 
 </resources>
